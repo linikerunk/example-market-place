@@ -1,6 +1,6 @@
 <h1 align="center">
+	![image](https://user-images.githubusercontent.com/27506588/167977886-a25cbd2c-4cf1-4604-b59c-6758aa97354a.png)
 </h1>
-![image](https://user-images.githubusercontent.com/27506588/167977604-33461c35-ddea-425e-aa07-e8e65dc7b95e.png)
 
 <h3 align="center">
     This is a repo about AMcom company, that will lead with several clientes and product that will have a commission.
