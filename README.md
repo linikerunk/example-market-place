@@ -1,5 +1,5 @@
 <h1 align="center">
-	![image](https://user-images.githubusercontent.com/27506588/167971928-9d3065cb-d259-412a-9ba0-78bdda393707.png)
+	AMcom Market place
 </h1>
 
 <h3 align="center">
