@@ -64,8 +64,12 @@
 
 ---
 
-## 👀 UML and Deploys
+## 👀 UML
 
+![image](https://user-images.githubusercontent.com/27506588/167981667-e05eecda-d90e-4a88-9257-5be8be778450.png)
+
+
+## Deploys
 The application is available on heroku and vercel:
 
 UML about system:
