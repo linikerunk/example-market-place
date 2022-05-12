@@ -139,7 +139,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+.amcom-venv
+amcom-venv
+amcom-venv/
 # Spyder project settings
 .spyderproject
 .spyproject
