@@ -1,5 +1,5 @@
 <h1 align="center">
-	![image](https://user-images.githubusercontent.com/27506588/167977886-a25cbd2c-4cf1-4604-b59c-6758aa97354a.png)
+	![image](https://user-images.githubusercontent.com/27506588/167971928-9d3065cb-d259-412a-9ba0-78bdda393707.png)
 </h1>
 
 <h3 align="center">
