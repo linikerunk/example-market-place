@@ -1,9 +1,9 @@
 <h1 align="center">
-   <a href="#"> voxus-invest </a>
+   <a href="#"> AMcom Market Place </a>
 </h1>
 
 <h3 align="center">
-    This is a repo about invest to the company voxus, that will lead with several clientes and generate PDF bills
+    This is a repo about AMcom company, that will lead with several clientes and product that will have a commission.
 </h3>
 
 <p align="center">
@@ -37,9 +37,7 @@
  <a href="#-how-to-contribute">How to contribute</a> •
  <a href="#%EF%B8%8F-autor">Author</a> • 
  <a href="#-license">License</a>
-
 </p>
-
 
 ## 💻 About
 
@@ -86,31 +84,25 @@ example register:
 
 Before you begin, you will need to have the following tools installed on your machine:  
 * [Git](https://git-scm.com)  
-* [Python](https://www.python.org).  
+* [Python](https://www.python.org). 
 * In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)    
 
 
 
-> <details open>
->	 <summary>
-> 		<b> Running locally </b>
->	 </summary>
-> 
+><details>
+> 	<summary>
+> 		<b> Running app Django DRF</b>
+> 	</summary>
+
 >	1. Clone this repository:  
->	 	`$ git clone https://github.com/linikerunk/voxus-invest.git`  
+>	 	`$ git clone https://github.com/linikerunk/amcom-market-place.git`  
 >	2. Create a virtualenv:  
 	 	`$ python3 -m venv name_venv`  
 > 	3. Activate your env:  
 >	 	`$ source /home/brago/workspace/projects/voxus/voxus-invest-env/bin/activate`  
 > 	4. Install the dependencies (step for Linux users only):  
-> 		`$ pip install -r requirements.txt`  
-
-> 	5. Run the application in development mode:  
-> 		`$ uvicorn app.main:app `  
->	6. The server will start at port: 8000 - [see the docs](http://localhost:8000/docs)  
-	7. The server will start at port: 8000 - [see the docs](http://localhost:8000/redoc)  
+> 		`$ pip install -r requirements.txt` 
 > </details>
-
 
 > <details>
 > 	<summary>
@@ -132,7 +124,7 @@ Before you begin, you will need to have the following tools installed on your ma
 
 The following tools were used in the construction of the project:
 
-  [Python](https://www.python.org) + [FastAPI](https://fastapi.tiangolo.com)
+  [Python](https://www.python.org) + [Django DRF](https://www.django-rest-framework.org/)
 
 
 > <details open>
@@ -140,30 +132,15 @@ The following tools were used in the construction of the project:
 >		<b> Dependences </b>
 >	</summary>
 >
-> -   [sqlalchemy](https://github.com/sqlalchemy/sqlalchemy)  
-> -   [psycopg2](https://github.com/psycopg/psycopg2)  
-> -   [asyncpg](https://github.com/MagicStack/asyncpg)  
-> -   [aiosqlite](https://github.com/omnilib/aiosqlite)  
-> -   [alembic](https://github.com/sqlalchemy/alembic)  
-> -   [passlib](https://github.com/glic3rinu/passlib)  
-> -   [pyjwt](https://github.com/jpadilla/pyjwt)  
-> -   [httpx](https://github.com/encode/httpx)  
-> -   [mangum](https://github.com/jordaneremieff/mangum)  
-> </details>
-
-> <details>
->	<summary>
->		<b> Development Dependences </b>
->	</summary>
->
-> -   [black](https://github.com/psf/black)  
-> -   [flake8](https://github.com/PyCQA/flake8)  
-> -   [isort](https://github.com/PyCQA/isort)  
-> -   [faker](https://github.com/joke2k/faker)  
-> -   [pytest](https://github.com/pytest-dev/pytest)  
-> -   [pytest-asyncio](https://github.com/pytest-dev/pytest-asyncio)  
-> -   [pytest-cov](https://github.com/pytest-dev/pytest-cov)  
-> -   [pygount](https://github.com/roskakori/pygount)  
+> -   [django](https://www.djangoproject.com/)  
+> -   [django drf](https://www.django-rest-framework.org/)
+> -   [unitest](https://docs.python.org/3/library/unittest.html) 
+> -   [flake8](https://github.com/PyCQA/flake8)
+> -   [postgreSQL](https://www.postgresql.org/)  
+> -   [heroku](https://www.heroku.com/)  
+> -   [react](https://pt-br.reactjs.org/)
+> -   [html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+> -   [css](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 > </details>
 ---
 
