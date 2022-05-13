@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Sale, ProductService, SaleProductService
+from .models.sale import Sale
+from .models.product_service import ProductService
+from .models.sale_product_service import SaleProductService
 
 
 @admin.register(Sale)

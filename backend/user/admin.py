@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Client, Seller
+from .models.client import Client
+from .models.seller import Seller
 
 
 @admin.register(Client)
