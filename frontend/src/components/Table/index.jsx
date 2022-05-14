@@ -1,3 +1,6 @@
+import { Flex } from "../Vendas/styles";
+import { Input } from "../Input";
+
 import * as S from "./style";
 
 export function Table() {
@@ -5,15 +8,19 @@ export function Table() {
     <>
     <S.Container>
         <S.TitlePag> Produtos </S.TitlePag>
-    </S.Container>
-    <S.Container>
-        <S.TitlePag> Quantidade </S.TitlePag>
-    </S.Container>
-    <S.Container>
-        <S.TitlePag> Preço unitário </S.TitlePag>
-    </S.Container>
-    <S.Container>
-        <S.TitlePag> Total </S.TitlePag>
+        <Flex>
+            <Input
+                widthInput={"30rem"}
+                type={"text"}
+                text={"Buscar pelo código de barras ou descição"}
+            />
+            <Input
+                type={"number"}
+                widthInput={"15rem"}
+                min={0}
+                text={"Quantidade de itens"}
+            />
+        </Flex>
     </S.Container>
     </>
     )
