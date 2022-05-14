@@ -11,7 +11,7 @@ class Sale(Base):
     operation_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.__class__
+        return f'Venda: {self.id}, Horário de operação: {self.operation_date} '
 
     class Meta:
         verbose_name = "Sale"

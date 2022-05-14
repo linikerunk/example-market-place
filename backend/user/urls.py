@@ -1,11 +1,11 @@
-from django.urls import path # path is a relative path to create a route
-from django.conf import settings
-from django.conf.urls.static import static # static provides a file static to me
-from .views.client import ClientView
+from rest_framework.routers import SimpleRouter
+from .views.client import ClientViewSet
+from .views.seller import SellerViewSet
 
 
-app_name = "marketplace"
+router_user = SimpleRouter()
 
-urlpatterns = [
-    path('client/', ClientView.as_view(), name="sale"),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+router_user.register('clients', ClientViewSet),
+router_user.register('clients/<int:pk>', ClientViewSet),
+router_user.register('sellers', SellerViewSet),
+router_user.register('sellers/<int:pk>', SellerViewSet)

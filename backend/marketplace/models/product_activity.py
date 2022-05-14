@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from .base import Base 
 
 
-class ProductService(Base):
+class ProductActivity(Base):
     name = models.CharField(max_length=200)
     is_product = models.BooleanField(default=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
@@ -19,5 +19,5 @@ class ProductService(Base):
         return self.name
 
     class Meta:
-        verbose_name = "ProductService"
-        verbose_name_plural = "ProductServices"
+        verbose_name = "ProductActivity"
+        verbose_name_plural = "ProductActivitys"
