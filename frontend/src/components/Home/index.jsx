@@ -1,13 +1,14 @@
 import { Container } from "../../styles/global";
-import * as Styled from "./styles";
+import { Table } from "../Table";
+import * as S from "./styles";
 
 
 export function Home() {
     return (
         <Container>
-            <Styled.Wrapper>
-                <h1>dasdasdadas</h1>
-            </Styled.Wrapper>
+            <S.Wrapper>
+                <Table />
+            </S.Wrapper>
         </Container>
   )
 }
