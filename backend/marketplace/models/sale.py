@@ -6,8 +6,16 @@ from user.models.seller import Seller
 
 
 class Sale(Base):
-    client = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
-    seller = models.ForeignKey(Seller, on_delete=models.DO_NOTHING)
+    client = models.ForeignKey(
+        Client,
+        related_name='client',
+        on_delete=models.DO_NOTHING
+    )
+    seller = models.ForeignKey(
+        Seller,
+        related_name='client',
+        on_delete=models.DO_NOTHING
+    )
     operation_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

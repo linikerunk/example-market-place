@@ -5,18 +5,16 @@ from marketplace.models.sale_product_activity import SaleProductActivity
 
 
 class SaleProductActivitySerializer(serializers.ModelSerializer):
-    sales = serializers.SlugRelatedField(
+    sale = serializers.PrimaryKeyRelatedField(
         queryset=Sale.objects.all(),
-        slug_field='sales',
         required=False
     )
-    product_activity = serializers.SlugRelatedField(
+    product_activity = serializers.PrimaryKeyRelatedField(
         queryset=ProductActivity.objects.all(),
-        slug_field='product_activity',
         required=False
     )
-    quantity = serializers.CharField(allow_blank=False, required=True)
+    quantity = serializers.IntegerField(required=True)
 
     class Meta:
         model = SaleProductActivity
-        fields = ('id', 'sales', 'product_activity', 'quantity')
+        fields = ('id', 'sale', 'product_activity', 'quantity')
