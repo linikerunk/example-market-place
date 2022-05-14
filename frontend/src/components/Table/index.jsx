@@ -1,5 +1,6 @@
 import { Flex } from "../Vendas/styles";
 import { Input } from "../Input";
+import { Button } from "../Button";
 
 import * as S from "./style";
 
@@ -20,6 +21,7 @@ export function Table() {
                 min={0}
                 text={"Quantidade de itens"}
             />
+            <Button color={"#049237"}>Adicionar</Button>
         </Flex>
     </S.Container>
     </>
