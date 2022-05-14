@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
 
 export const Table = styled.table`
-    margin-top: 2rem;
-    height: 15rem;
-    width: 100%;
+  margin-top: 2rem;
+
+  height: 15rem;
+  width: 100%;
 `;
 
 export const Columns = styled.tr``;
@@ -16,6 +17,16 @@ export const Title = styled.th`
     color: #000;
     width: ${widthTitle};
   `}
+`;
+
+export const Items = styled.td`
+  &:last-child {
+    cursor: pointer;
+  }
+
+  svg {
+    color: #e92929;
+  }
 `;
 
 export const Container = styled.div`

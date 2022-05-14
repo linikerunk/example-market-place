@@ -12,6 +12,18 @@ export const Wrapper = styled.div`
   border-left: 1px solid #ddd;
 `;
 
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rem;
+`;
+
+export const Items = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+`;
+
 export const Flex = styled.div`
   display: flex;
   align-items: center;
