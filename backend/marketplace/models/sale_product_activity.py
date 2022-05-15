@@ -11,7 +11,6 @@ class SaleProductActivity(Base):
         related_name='product_activity',
         on_delete=models.DO_NOTHING
     )
-    quantity = models.IntegerField()
 
     def __str__(self):
         return self.__class__

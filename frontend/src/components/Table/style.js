@@ -22,10 +22,15 @@ export const Title = styled.th`
 export const Items = styled.td`
   &:last-child {
     cursor: pointer;
+    &:hover {
+      background-color: #ff000039;
+      border-radius: 30%;
+    }
   }
 
   svg {
-    color: #e92929;
+    height: 20px;
+    color: #e70000;
   }
 `;
 

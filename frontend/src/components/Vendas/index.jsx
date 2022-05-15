@@ -1,8 +1,23 @@
 import { Button } from "../Button";
+import { useState, useEffect } from 'react'
+import { API } from '../../services/api'
 import { TitlePag } from "../Table/style";
 import * as S from "./styles";
 
 export function Vendas() {
+  const [sellers, setSellers] = useState([])
+  const [clients, setClients] = useState([])
+
+  async function getData() {
+    const response = await API.get("sellers/");
+    const { data } = await API.get('clients/')
+    setSellers(response.data)
+    setClients(data)
+  }
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
       <S.Wrapper>
@@ -11,19 +26,17 @@ export function Vendas() {
           <S.Items>
             <S.Label>Escolha um vendedor</S.Label>
             <S.Select>
-              <option selected="">Selecione o nome</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              {sellers.map(({ name, id }) => (
+                <option>{name}</option>
+              ))}
             </S.Select>
           </S.Items>
           <S.Items>
             <S.Label>Escolha um cliente</S.Label>
             <S.Select>
-              <option selected="">Selecione o nome</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              {clients.map(({ name, id }) => (
+                <option key={id} value={id}>{ name }</option>
+              ))}
             </S.Select>
           </S.Items>
         </S.Box>
@@ -34,7 +47,7 @@ export function Vendas() {
             <S.Price>R$ 146,10</S.Price>
           </S.Flex>
           <S.Flex>
-            <Button color={"#E92929"}>Cancelar</Button>
+            <Button color={"#1137f1ed"}>Cancelar</Button>
             <Button color={"#049237"}>Finalizar</Button>
           </S.Flex>
         </S.Footer>

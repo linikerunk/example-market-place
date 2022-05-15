@@ -11,9 +11,9 @@ class SaleAdmin(admin.ModelAdmin):
 
 @admin.register(ProductActivity)
 class ProductActivityAdmin(admin.ModelAdmin):
-    list_display =  ['name', 'is_product', 'price', 'commission']
+    list_display =  ['name', 'is_product', 'price', 'commission', 'quantity']
 
 
 @admin.register(SaleProductActivity)
 class SaleProductActivityAdmin(admin.ModelAdmin):
-    list_display =  ['sale', 'product_activity', 'quantity']
+    list_display =  ['sale', 'product_activity']

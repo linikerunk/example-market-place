@@ -1,6 +1,6 @@
 from django.db import models
-from django.core.exceptions import ValidationError
 from django.core.validators import MaxValueValidator, MinValueValidator
+
 from .base import Base 
 
 
@@ -13,18 +13,16 @@ class ProductActivity(Base):
         validators=[
             MaxValueValidator(10),
             MinValueValidator(0)
-        ]
-     )
-
-    def _commission(self):
-        if self.commission > 10 or self.commission < 0:
-            raise ValidationError({
-                'error': 'Comissão deve estar entre 0 e 10 %'
-            })
+        ],
+    )
+    quantity = models.IntegerField()
     
     def __str__(self):
         return self.name
 
+    @property
+    def _get_total_price(self):
+        return self.price * self.quantity
     class Meta:
         verbose_name = "ProductActivity"
         verbose_name_plural = "ProductActivitys"
