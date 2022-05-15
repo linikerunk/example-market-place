@@ -24,16 +24,16 @@ export function Modal({ isExit, setIsExit }) {
           <p>Cadastro de Serviços</p>
           <S.Form onSubmit={handleSubmit} method={"post"}>
           <S.ContainerInput>
-              <Input text={"Nome do Vendedor:"} type={"text"} widthInput={"40rem"}/>
+              <Input text={"Nome do Vendedor:"} type="text" widthInput={"40rem"} name="seller"/>
             </S.ContainerInput>
             <S.ContainerInput>
-              <Input text={"Nome do Produto:"} type={"text"} widthInput={"40rem"}/>
+              <Input text={"Nome do Produto:"} type="text" widthInput={"40rem"} name="product_name"/>
             </S.ContainerInput>
             <S.ContainerInput>
-              <Input text="Preço:" type={"text"} widthInput={"40rem"}/>
+              <Input text="Preço:" type="text" widthInput={"40rem"} name="price"/>
             </S.ContainerInput>
             <S.ContainerInput>
-              <Input text="Comissão:" type={"text"} widthInput={"40rem"}/>
+              <Input text="Comissão:" type="text" widthInput={"40rem"} name="comission" />
             </S.ContainerInput>
             <S.ContainerButton>
               <Button type="submit" color={"#049237"}>Continuar</Button>

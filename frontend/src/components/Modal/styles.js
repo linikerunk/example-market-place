@@ -22,7 +22,7 @@ export const Modal = styled.div`
   position: static;
   margin: 0 auto;
   display: flex;
-  height: 33rem;
+  height: 40rem;
   width: 51rem;
 
   p {
