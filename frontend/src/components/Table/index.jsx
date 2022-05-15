@@ -6,7 +6,7 @@ import * as S from "./style";
 import { useEffect, useState } from "react";
 import { API } from "../../services/api";
 
-export function Table() {
+export function Table({ setIsOpen }) {
   const [data, setData] = useState([]);
   async function getData() {
     const response = await API.get("product_activitys/");
@@ -36,7 +36,7 @@ export function Table() {
           min={0}
           text={"Quantidade de itens"}
         />
-        <Button color={"#1137f1ed"}>Adicionar</Button>
+        <Button color={"#1137f1ed"} click={() => setIsOpen(true)}>Adicionar</Button>
       </Flex>
       <S.Table>
         <S.Columns>
