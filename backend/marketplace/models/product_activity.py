@@ -11,8 +11,8 @@ class ProductActivity(Base):
     commission = models.IntegerField(
         default=0,
         validators=[
-            MaxValueValidator(10),
-            MinValueValidator(0)
+            MaxValueValidator(11),
+            MinValueValidator(-1)
         ],
     )
     quantity = models.IntegerField()

@@ -12,9 +12,6 @@ class SaleProductActivity(Base):
         on_delete=models.DO_NOTHING
     )
 
-    def __str__(self):
-        return self.__class__
-
     class Meta:
         verbose_name = "SaleProductActivity"
         verbose_name_plural = "SaleProductActivitys"

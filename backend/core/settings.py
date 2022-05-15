@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-f=g#4p6nl8uxd%86jfb04b4tk&tg$v1v+744az-$-3-syhpvlq'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,9 +89,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'amcom_market', 
-        'USER': 'postgres', 
-        'PASSWORD': '1234',
+        'NAME': config('DATABASE_NAME'), 
+        'USER': config('DATABASE_USER'), 
+        'PASSWORD': config('DATABASE_PASS'), 
         'HOST': 'localhost', 
         'PORT': '5432',
     }
