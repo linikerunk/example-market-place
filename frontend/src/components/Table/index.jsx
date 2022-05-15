@@ -1,13 +1,13 @@
-import { Flex } from "../Vendas/styles";
+import { Button } from "../Button";
 import { Input } from "../Input";
 import { FaTrash } from "react-icons/fa";
-import { Button } from "../Button";
 
+import { Flex } from "../Vendas/styles";
 import * as S from "./style";
 
 export function Table() {
-    return (
-   <S.Container data-aos="fade-right">
+  return (
+    <S.Container data-aos="fade-right">
       <S.TitlePag>Produtos</S.TitlePag>
       <Flex>
         <Input
@@ -59,5 +59,5 @@ export function Table() {
         </S.Columns>
       </S.Table>
     </S.Container>
-    )
+  );
 }

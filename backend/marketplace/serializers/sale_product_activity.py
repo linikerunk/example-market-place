@@ -1,18 +1,12 @@
 from rest_framework import serializers
-from marketplace.models.product_activity import ProductActivity
-from marketplace.models.sale import Sale
 from marketplace.models.sale_product_activity import SaleProductActivity
+from marketplace.serializers.sale import SaleSerializer
+from marketplace.serializers.product_activity import ProductActivitySerializer
 
 
 class SaleProductActivitySerializer(serializers.ModelSerializer):
-    sale = serializers.PrimaryKeyRelatedField(
-        queryset=Sale.objects.all(),
-        required=False
-    )
-    product_activity = serializers.PrimaryKeyRelatedField(
-        queryset=ProductActivity.objects.all(),
-        required=False
-    )
+    sale = SaleSerializer()
+    product_activity = ProductActivitySerializer()
     quantity = serializers.IntegerField(required=True)
 
     class Meta:

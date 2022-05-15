@@ -29,3 +29,37 @@ export const Flex = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const Label = styled.label`
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+`;
+
+export const PriceTotal = styled.h3`
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: gray;
+`;
+
+export const Price = styled.h3`
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: gray;
+`;
+
+export const Select = styled.select`
+  padding: 0.7rem 2rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+`;
+
+export const Footer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+`;
