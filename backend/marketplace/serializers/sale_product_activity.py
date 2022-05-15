@@ -5,8 +5,8 @@ from marketplace.serializers.product_activity import ProductActivitySerializer
 
 
 class SaleProductActivitySerializer(serializers.ModelSerializer):
-    sale = SaleSerializer()
-    product_activity = ProductActivitySerializer()
+    sale = SaleSerializer(required=True)
+    product_activity = ProductActivitySerializer(required=True)
     quantity = serializers.IntegerField(required=True)
 
     class Meta:
