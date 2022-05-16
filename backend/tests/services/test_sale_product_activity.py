@@ -1,16 +1,15 @@
 import unittest
-from django.urls import reverse
-from marketplace.serializers.sale_product_activity import SaleProductActivity
+from marketplace.services.sale_product_activity import SaleProductActivityService
 
 
-class SaleProductActivityTestAPICase(unittest.TestCase):
-    serializer_class = SaleProductActivity
+class SaleProductActivityTestService(unittest.TestCase):
+    class_services = SaleProductActivityService
     field_id = 'id'
     class_model = 'SaleProductActivity'
     app_label = 'marketplace'
 
     def setUp(self):
-        super(SaleProductActivityTestAPICase, self).setUp()
+        super(SaleProductActivityService, self).setUp()
 
     def test_post(self):
         ...

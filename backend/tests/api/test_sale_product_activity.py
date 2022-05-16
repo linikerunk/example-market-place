@@ -13,15 +13,19 @@ class SaleProductActivityTestAPICase(unittest.TestCase):
         super(SaleProductActivityTestAPICase, self).setUp()
 
     def test_post(self):
+
         ...
 
     def test_get(self):
+
         ...
     
     def test_put(self):
+
         ...
 
     def test_delete(self):
+        
         ...
 
 

@@ -1,5 +1,4 @@
 import unittest
-from django.urls import reverse
 from marketplace.serializers.product_activity import ProductActivity
 
 
@@ -13,15 +12,19 @@ class ProductActivityTestAPICase(unittest.TestCase):
         super(ProductActivityTestAPICase, self).setUp()
 
     def test_post(self):
+        
         ...
 
     def test_get(self):
+
         ...
     
     def test_put(self):
+
         ...
 
     def test_delete(self):
+
         ...
 
 
