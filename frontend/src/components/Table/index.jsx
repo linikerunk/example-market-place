@@ -28,6 +28,7 @@ export function Table({ setIsOpen }) {
         <Input
           widthInput={"30rem"}
           type={"text"}
+          setData={setData}
           text={"Buscar pelo código de barras ou descição"}
         />
         <Input

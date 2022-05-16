@@ -37,6 +37,21 @@ export const Label = styled.label`
   margin-bottom: 0.5rem;
 `;
 
+export const WrapperInput = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    cursor: pointer;
+
+    &:hover {
+      background: #ddd;
+      border-radius: 50%;
+    }
+  }
+`
+
 export const PriceTotal = styled.h3`
   margin-bottom: 2rem;
   font-size: 1.6rem;
@@ -53,6 +68,7 @@ export const Price = styled.h3`
 export const Select = styled.select`
   padding: 0.7rem 2rem;
   border: none;
+  width: 80%;
   outline: none;
   background-color: #fff;
   border: 2px solid #d3d3d3;

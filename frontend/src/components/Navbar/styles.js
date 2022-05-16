@@ -12,10 +12,13 @@ export const Header = styled.header`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
 
   h1 {
+    display: flex;
+    align-self: center;
     color: #007a4f;
   }
 `;

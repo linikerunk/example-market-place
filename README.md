@@ -33,6 +33,7 @@
  <a href="#%EF%B8%8F-features">Features</a> •
  <a href="#-demo">Demo</a> • 
  <a href="#-running-the-project">Running the project</a> • 
+ <a href="#-running-the-project">Running the test </a> • 
  <a href="#-tech-stack">Tech Stack</a> •
  <a href="#-how-to-contribute">How to contribute</a> •
  <a href="#%EF%B8%8F-autor">Author</a> • 
@@ -83,6 +84,48 @@ example register:
 
 ---
 ## 🚀 Running the project
+### PYTHON SERVER WITH DRF
+<h6>first you need to populate the database to initialize the table test</h6>
+<p>for this application you will need python version 3.6 +</p>
+
+```sh
+pip install -r requirements.py
+```
+
+<p> Django up your server
+
+```sh
+cd backend
+python manage.py migrate
+python manage.py runserver
+```
+
+<p> to populate your database and have some datas </p>
+
+```sh
+python mock_data.py
+# enjoy it 😊
+```
+### REACT WITH NODE YARN
+```sh
+cd frontend
+yarn 
+yarn dev
+
+running into 3333 port
+---
+
+
+## 🚀 Running the test
+```sh
+cd backend
+python manage.py test tests\api
+python manage.py test tests\models
+python manage.py test tests\serializers
+python manage.py test tests\services
+# see if the tests is ok with coverage.
+coverage run -m unittest
+```
 
 ### Pre-requisites
 
