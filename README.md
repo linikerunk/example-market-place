@@ -58,7 +58,7 @@
 
 ### Technical resources:  
 ✔️ [optional] Interactive documentation with (swagger)  
-✔️ Database PostgreSQL
+✔️ Database PostgreSQL  
 ✔️ Database Migrations  
 ✔️ Micro-services with front-end with React to consume back-end
 
@@ -80,6 +80,12 @@ UML about system:
 example register:
 ![image](https://user-images.githubusercontent.com/27506588/167971928-9d3065cb-d259-412a-9ba0-78bdda393707.png)
 
+### Pre-requisites
+
+Before you begin, you will need to have the following tools installed on your machine:  
+* [Git](https://git-scm.com)  
+* [Python](https://www.python.org). 
+* In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)    
 
 ---
 ## 🚀 Running the project
@@ -87,9 +93,18 @@ example register:
 <h6>first you need to populate the database to initialize the table test</h6>
 <p>for this application you will need python version 3.6 +</p>
 
-```sh
-pip install -r requirements.py
-```
+
+>	1. Clone this repository:  
+>	 	`$ git clone https://github.com/linikerunk/amcom-market-place.git`  
+>	2. Create a virtualenv:  
+	 	`$ python3 -m venv name_venv`  
+> 	3. Activate your env (Linux):  
+>	 	`$ source name_venv/bin/activate`  
+> 	3. Activate your env (Widowns):  
+>	 	`$ cd  name_venv/Scripts && ./activate`  
+> 	4. Install the dependencies:  
+> 		`$ pip install -r requirements.txt` 
+
 
 <p> Django up your server
 
@@ -114,7 +129,7 @@ yarn dev
 running into 3333 port
 ---
 
-
+---
 ## 🚀 Running the test
 ```sh
 cd backend
@@ -126,45 +141,6 @@ python manage.py test tests\services
 coverage run -m unittest
 ```
 
-### Pre-requisites
-
-Before you begin, you will need to have the following tools installed on your machine:  
-* [Git](https://git-scm.com)  
-* [Python](https://www.python.org). 
-* In addition, it is good to have an editor to work with the code like [VSCode](https://code.visualstudio.com/)    
-
-
-
-><details>
-> 	<summary>
-> 		<b> Running app Django DRF</b>
-> 	</summary>
-
->	1. Clone this repository:  
->	 	`$ git clone https://github.com/linikerunk/amcom-market-place.git`  
->	2. Create a virtualenv:  
-	 	`$ python3 -m venv name_venv`  
-> 	3. Activate your env:  
->	 	`$ source /home/brago/workspace/projects/voxus/voxus-invest-env/bin/activate`  
-> 	4. Install the dependencies (step for Linux users only):  
-> 		`$ pip install -r requirements.txt` 
-> </details>
-
-> <details>
-> 	<summary>
-> 		<b> Running app React</b>
-> 	</summary>
-
-> 	1. Access the project folder cmd/terminal:  
-> 		`$ cd frontend `  
-> 	2. Install the node_modules of package.json:  
->		`$ yarn `
->	3. Run the front-end project:  
->		`$ yarn start`  
-> 	5. The server will start at port: 8000 - [see the docs](http://localhost:8000/docs)
-> </details>
-
----
 
 ## 🛠 Tech Stack
 

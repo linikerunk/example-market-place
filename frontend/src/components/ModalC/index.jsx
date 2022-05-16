@@ -1,10 +1,13 @@
 import * as S from "./style";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button } from "../Button";
+import { API } from '../../services/api'
 
 export function ModalC({ title, children, setIsOpen, api }) {
   async function getData() {
-    return
+    const response = await API.post(api, {
+      name: ''
+    })
   }
 
   useEffect(() => {
