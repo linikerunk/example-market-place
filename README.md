@@ -64,7 +64,7 @@
 
 ---
 
-## 👀 UML
+## ➡ UML
 
 ![image](https://user-images.githubusercontent.com/27506588/167981667-e05eecda-d90e-4a88-9257-5be8be778450.png)
 
@@ -89,9 +89,8 @@ Before you begin, you will need to have the following tools installed on your ma
 
 ---
 ## 🚀 Running the project
-### PYTHON SERVER WITH DRF
-<h6>first you need to populate the database to initialize the table test</h6>
-<p>for this application you will need python version 3.6 +</p>
+<h4>first you need to populate the database to initialize the table test</h4>
+<p>for this application you will need python version 3.8 +</p>
 
 
 >	1. Clone this repository:  
@@ -106,7 +105,7 @@ Before you begin, you will need to have the following tools installed on your ma
 > 		`$ pip install -r requirements.txt` 
 
 
-<p> Django up your server
+<p> Django up your server </p>
 
 ```sh
 cd backend
@@ -120,7 +119,7 @@ python manage.py runserver
 python mock_data.py
 # enjoy it 😊
 ```
-### REACT WITH NODE YARN
+<p> React start server </p>
 ```sh
 cd frontend
 yarn 
@@ -129,8 +128,7 @@ yarn dev
 running into 3333 port
 ---
 
----
-## 🚀 Running the test
+## 🪓 Running the test
 ```sh
 cd backend
 python manage.py test tests\api
@@ -140,7 +138,6 @@ python manage.py test tests\services
 # see if the tests is ok with coverage.
 coverage run -m unittest
 ```
-
 
 ## 🛠 Tech Stack
 
