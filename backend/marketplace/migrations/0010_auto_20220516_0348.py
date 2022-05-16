@@ -11,6 +11,28 @@ from marketplace.models.sale_product_activity import SaleProductActivity
 from user.models.client import Client
 from user.models.seller import Seller
 
+PRODUCT_ACTIVITY = [
+    'Gillette (lâmina de barbear)',
+    'Judô',
+    'Miojo (macarrão instantâneo)',
+    'Manutenção técnica',
+    'Danone (iogurte)',
+    'Bombril (esponja de aço)',
+    'Zíper (fecho éclair)',
+    'Leite Moça (leite condensado)',
+    'Isopor (Poliestireno Expandido – EPS) ',
+    'Cotonetes (hastes flexíveis) ',
+    'Xerox (máquina de fotocópias) ',
+    'Q-boa (água sanitária)',
+    'Maizena (Amido de Milho) ',
+    'Yakult (Leite Fermentado) ',
+    'Pó Royal (Fermento Químico em Pó) ',
+    'Nescau (achocolatado em pó) ',
+    'Catupiry (Requeijão cremoso) ',
+    'Caldo Knorr (Caldo de Galinha em Cubos) ',
+    'Super Bonder (Cola Tudo) ',
+    'Toddynho (Achocolatado Pronto) ',
+]
 
 def create_data(apps, schema_editor):
     fake = Faker()
@@ -23,28 +45,28 @@ def create_data(apps, schema_editor):
         Seller.objects.create(name=fake.name())
 
     for index in range(10):
-        import ipdb; ipdb.set_trace();
-        client_id = Client.objects.filter(id=index + 1).first()
-        seller_id = Seller.objects.filter(id=index + 1).first()
+        client = Client.objects.filter(id=index + Client.objects.first().pk).first()
+        seller = Seller.objects.filter(id=index + Client.objects.first().pk).first()
         Sale.objects.create(
-            client_id=client_id,
-            seller_id=seller_id,
+            client_id=client.id,
+            seller_id=seller.id,
             operation_date=fake.date_time(),
     )
 
     for index in range(20):
         ProductActivity.objects.create(
-            name=fake.name(),
+            name=PRODUCT_ACTIVITY[index],
             is_product=True if index % 2 else False,
             price=fake.random_number(digits=3, fix_len=True),
             commission=fake.randomize_nb_elements(number=10, ge=True, min=0),
             quantity=fake.randomize_nb_elements(number=50, ge=True, min=1)
         )
-    
+
     for index in range(10):
+        import ipdb; ipdb.set_trace();
         SaleProductActivity.objects.create(
-            sale=Sale.objects.get(id=index),
-            product_activity=ProductActivity.objects.get(id=index)
+            sale=Sale.objects.get(id=index + Client.objects.first().pk),
+            product_activity=ProductActivity.objects.get(id=index + Client.objects.first().pk)
         )
 
 
