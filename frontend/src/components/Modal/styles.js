@@ -22,7 +22,7 @@ export const Modal = styled.div`
   position: static;
   margin: 0 auto;
   display: flex;
-  height: 40rem;
+  height: auto;
   width: 51rem;
 
   p {
@@ -43,6 +43,21 @@ export const containerModal = styled.div`
 export const ContainerInput = styled.div`
   position: static;
   margin-top: 3rem;
+
+  label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: gray;
+  }
+
+  select {
+    padding: 0.7rem 2rem;
+    border: none;
+    width: 95%;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #d3d3d3;
+  }
 `;
 
 export const ContainerButton = styled.div`

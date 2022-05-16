@@ -3,7 +3,7 @@ import { API } from '../../services/api'
 
 import * as S from "./style";
 
-export function Input({ text, type, min, widthInput, setData }) {
+export function Input({ text, type, min, widthInput, setData, onChange }) {
   const [search, setSearch] = useState("")
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export function Input({ text, type, min, widthInput, setData }) {
     }
     getSearch()
   }, [search])
-
+  
   return (
     <S.Wrapper>
       <span>{text}</span>

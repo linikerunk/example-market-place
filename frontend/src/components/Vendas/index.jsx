@@ -11,6 +11,7 @@ import * as S from "./styles";
 export function Vendas() {
   const [sellers, setSellers] = useState([]);
   const [clients, setClients] = useState([]);
+  const [valueInput, setValueInput] = useState('')
   const [isOpen, setIsOpen] = useState(null);
 
   async function getData() {
@@ -83,12 +84,13 @@ export function Vendas() {
       </S.Wrapper>
 
       {isOpen && (
-        <ModalC title={isOpen.title} api={isOpen.api} setIsOpen={setIsOpen}>
-          <Input
+        <ModalC valueInput={valueInput} title={isOpen.title} api={isOpen.api} setIsOpen={setIsOpen}>
+          <input
             text={`Nome do ${isOpen.name}:`}
             name={isOpen.name}
             placeholder={isOpen.name}
             widthInput={"40rem"}
+            onChange={(event) => setValueInput(event.target.value)}
           />
         </ModalC>
       )}

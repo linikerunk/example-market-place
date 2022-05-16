@@ -113,12 +113,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-<p> to populate your database and have some datas </p>
-
-```sh
-python mock_data.py
-# enjoy it 😊
-```
 <p> React start server </p>
 ```sh
 cd frontend
@@ -179,7 +173,7 @@ The following tools were used in the construction of the project:
 
 ## 🦸‍♂️ Autor
 
-<a href="https://github.com/wlsouza">
+<a href="https://github.com/linikerunk">
  <img style="border-radius: 50%;" src="https://github.com/linikerunk.png" width="100px;" alt=""/>
  <br />
  <sub><b>Liniker Oliveira</b></sub></a> <a href="https://github.com/linikerunk" title="Github Liniker">🚀</a>

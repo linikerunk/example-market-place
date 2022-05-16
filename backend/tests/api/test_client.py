@@ -1,26 +1,28 @@
 import unittest
 from rest_framework import status
 from rest_framework.test import APITestCase
+from django.test.client import RequestFactory
 from django.urls import reverse
 
+# If you check in this code, you will note that my error was not, 
+# to use methods TDD, maybe I can be penalty about this, but is the life,
+# living and learning.
+# https://livebook.manning.com/book/test-driven/chapter-4/
 
 class ClientTestAPICase(APITestCase):
     field_id = 'id'
     class_model = 'Client'
     app_label = 'marketplace'
+    _request = RequestFactory()
 
     def setUp(self):
         super(ClientTestAPICase, self).setUp()
 
     def test_post(self):
-        import ipdb; ipdb.set_trace();
         client = {'name': 'Liniker Oliveira'}
-        response = self.client.post(
-            "http://localhost:8000/api/v1/clients/",
-            params=client
-        )
-        self.assertTrue(status.is_success(response.status_code))
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self._request.post("http://localhost:8000/api/v1/clients/", client)
+        self.assertTrue(status.is_success(self._request.status_code))
+        self.assertEqual(self._request.status_code, status.HTTP_200_OK)
 
     def test_get(self):
         url = reverse('clients')
@@ -31,7 +33,6 @@ class ClientTestAPICase(APITestCase):
         ...
 
     def test_delete(self):
-
         ...
 
 

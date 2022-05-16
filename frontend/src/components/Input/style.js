@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
     font-weight: bold;
     font-size: 1.3rem;
     position: absolute;
-    bottom: 40px;
+    top: -2rem;
     color: gray;
   }
 `;
