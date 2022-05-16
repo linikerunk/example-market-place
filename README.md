@@ -50,7 +50,7 @@
 
 ### API Routes:  
 ✔️ Route to register a new client. (It's called user within API and database)  
-✔️ [optional] Route to validate a reseller login and obtain a JWT token.  
+✔️ [optional] Route to validate a reseller login and obtain a token.  
 ✔️ Route to register a new product.  
 ✔️ Route to launch products by date and time and quantity.  
 ✔️ Route to consult salesperson data commission in a given period.
@@ -58,7 +58,6 @@
 
 ### Technical resources:  
 ✔️ [optional] Interactive documentation with (swagger)  
-✔️ [optional] JWT authentication  
 ✔️ Database PostgreSQL
 ✔️ Database Migrations  
 ✔️ Micro-services with front-end with React to consume back-end
