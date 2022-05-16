@@ -2,9 +2,9 @@ from rest_framework import serializers
 from marketplace.models.sale import Sale
 from marketplace.models.product_activity import ProductActivity
 from marketplace.models.sale_product_activity import SaleProductActivity
-from .sale import SaleSerializer
 from marketplace.serializers.product_activity import ProductActivitySerializer
 from marketplace.services.sale_product_activity import SaleProductActivityService
+from .sale import SaleSerializer
 
 
 class SaleProductActivitySerializer(serializers.ModelSerializer):
