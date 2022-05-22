@@ -63,7 +63,6 @@ def create_data(apps, schema_editor):
         )
 
     for index in range(10):
-        import ipdb; ipdb.set_trace();
         SaleProductActivity.objects.create(
             sale=Sale.objects.get(id=index + Client.objects.first().pk),
             product_activity=ProductActivity.objects.get(id=index + Client.objects.first().pk)
