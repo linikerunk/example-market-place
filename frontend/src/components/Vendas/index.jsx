@@ -20,7 +20,8 @@ export function Vendas() {
     setSellers(response.data);
     setClients(data);
   }
-  useEffect(() => {
+  useEffect(() => { // Esse Hook, você diz ao React que o componente precisa
+                    // fazer algo apenas depois da renderização.
     getData();
   }, []);
 
