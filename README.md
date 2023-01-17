@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-    This is a repo about AMcom company, that will lead with several clientes and product that will have a commission.
+    This is a repo about company, that will lead with several clientes and product that will have a commission.
 </h3>
 
 <p align="center">
