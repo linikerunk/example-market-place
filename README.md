@@ -1,5 +1,5 @@
 <h1 align="center">
-	AMcom Market place
+	 Marketplace
 </h1>
 
 <h3 align="center">
